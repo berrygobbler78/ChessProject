@@ -1,16 +1,22 @@
 public class Coordinate {
-    private static int x;
-    private static int y;
+    private int x;
+    private int y;
+    
+    private boolean pieceHere;
 
-    Coordinate(int x, int y) {
+    Coordinate(int x, int y, boolean pieceHere) {
         this.x = x;
         this.y = y;
     }
 
-    public static int getX() {
+    public int getX() {
         return x;
     }
-    public static int getY() {
+    public int getY() {
         return y;
+    }
+
+    public boolean isPieceHere() {
+        return pieceHere;
     }
 }
