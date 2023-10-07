@@ -1,10 +1,12 @@
+package chessGame;
+
 public class Coordinate {
     private int x;
     private int y;
     
     private boolean pieceHere;
 
-    Coordinate(int x, int y, boolean pieceHere) {
+    public Coordinate(int x, int y, boolean pieceHere) {
         this.x = x;
         this.y = y;
     }
@@ -14,6 +16,10 @@ public class Coordinate {
     }
     public int getY() {
         return y;
+    }
+
+    public void setPieceHere(boolean pieceHere) {
+        this.pieceHere = pieceHere;
     }
 
     public boolean isPieceHere() {
