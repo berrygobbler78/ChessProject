@@ -1,0 +1,2 @@
+piece should save what piece is attacking it. If the piece attacking the piece is a rook or queen or bishop, it should check if moving will put the king in danger. (Pins and such)
+For blocking a check, it should be checked whether any piece is able to move the position of the piece being checked (taking it), or along it's path (to block)
